@@ -1,0 +1,6 @@
+.venv/
+data/
+outputs/resnet18_embeddings.npy
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

@@ -1,0 +1,37 @@
+{
+  "images":27000,
+  "classes":10,
+  "train\/val\/test":[
+    18900,
+    4050,
+    4050
+  ],
+  "duplicates_removed":0,
+  "handcrafted_features":23,
+  "kept_after_correlation":11,
+  "rfe_selected":[
+    "r_mean",
+    "r_std",
+    "sat_mean",
+    "exg_std",
+    "vari_mean",
+    "blue_ratio",
+    "glcm_correlation",
+    "edge_strength",
+    "lbp_entropy",
+    "gray_entropy"
+  ],
+  "top_eta_features":[
+    "gray_entropy",
+    "edge_strength",
+    "glcm_homogeneity",
+    "glcm_energy",
+    "glcm_contrast"
+  ],
+  "pca_components_for_90pct":5,
+  "veg_band_cramers_v":0.435,
+  "raw_pixels_F1":0.43,
+  "best_handcrafted_F1":0.858,
+  "best_feature_set":"ResNet-18 embeddings (512)",
+  "best_F1":0.922
+}

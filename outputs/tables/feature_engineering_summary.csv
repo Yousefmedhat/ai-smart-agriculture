@@ -1,0 +1,24 @@
+feature,family,rationale,power_transformed,eta_sq,mutual_info,rf_importance,dropped_redundant,rfe_selected
+gray_entropy,Texture,Information content of the tile,False,0.813,0.762,0.05,False,True
+edge_strength,Texture,"Mean Sobel gradient — edges (roads, buildings)",True,0.784,0.874,0.067,False,True
+glcm_homogeneity,Texture,Texture smoothness — water/pasture high,False,0.776,,0.062,True,False
+glcm_energy,Texture,Texture uniformity / repetition,True,0.766,,0.033,True,False
+glcm_contrast,Texture,Local gray-level contrast (rough vs. smooth),True,0.762,,0.05,True,False
+b_std,Color / brightness,Blue variability,True,0.742,,0.061,True,False
+lbp_entropy,Texture,Micro-texture diversity (LBP),True,0.721,0.637,0.097,False,True
+contrast,Color / brightness,Global gray-level spread,False,0.673,,0.041,True,False
+g_std,Color / brightness,Green variability — patchy vs. uniform vegetation,False,0.673,,0.043,True,False
+r_std,Color / brightness,Red variability within tile,False,0.655,0.751,0.05,False,True
+sat_mean,Color / brightness,Color saturation — vivid crops vs. gray urban,False,0.634,0.599,0.032,False,True
+glcm_correlation,Texture,"Linear structure — rows, roads, field edges",True,0.613,0.686,0.078,False,True
+blue_ratio,Color / brightness,Relative blue — water indicator,False,0.554,0.543,0.045,False,True
+r_mean,Color / brightness,Red reflectance — high for bare soil / built-up,False,0.527,0.61,0.033,False,True
+val_mean,Color / brightness,HSV value (max channel brightness),True,0.515,,0.028,True,False
+brightness,Color / brightness,Overall reflectance,False,0.489,,0.027,True,False
+exg_std,Vegetation index,Vegetation heterogeneity (field patterns),True,0.474,0.4,0.041,False,True
+g_mean,Color / brightness,Green reflectance — vegetation,False,0.466,,0.028,True,False
+b_mean,Color / brightness,"Blue reflectance — water, haze",False,0.454,,0.028,True,False
+vari_mean,Vegetation index,VARI — vegetation index robust to atmosphere,False,0.448,0.626,0.038,False,True
+green_cover,Vegetation index,Fraction of vegetated pixels (ExG > 0.05),False,0.354,0.344,0.022,False,False
+gli_mean,Vegetation index,Green Leaf Index,False,0.349,,0.023,True,False
+exg_mean,Vegetation index,Excess Green — standard RGB vegetation index,False,0.349,,0.023,True,False
