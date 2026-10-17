@@ -12,6 +12,14 @@ satellite images, and which visual features (color, vegetation, texture) carry t
 | 1 (redo on new data) | Data collection, quality audit, EDA, stratified 70/15/15 split, normalization, augmentation |
 | 2 — Advanced Data Analysis & Feature Engineering | 23 hand-crafted features, power transform + scaling, ANOVA / Kruskal–Wallis / Welch t-tests / chi-squared, correlation pruning, mutual information + RFE, PCA, t-SNE, pretrained ResNet-18 embeddings, controlled feature-set comparison |
 
+## Notebooks
+
+| Notebook | What it does |
+|---|---|
+| `Smart_Agriculture_M2_EuroSAT.ipynb` | EuroSAT audit, EDA, feature engineering, statistical tests, PCA/t-SNE, feature-set comparison |
+| `Model_Training_M2.ipynb` | Model training & evaluation: EfficientNet-B0 land-cover classifier (96.6% test accuracy), crop-yield regression (Random Forest), crop recommendation (SVM, 99.1% test accuracy). Runs with local data files; set `PROJECT_DIR` first |
+| `Yield_Model_Audit.ipynb` | Re-checks the yield model: the reported R² 0.89 is on imputed + clipped targets; with observed targets and log yield it reaches R² 0.93 (random split) and **0.87 predicting 2011–2014 from 1997–2010** |
+
 ## Data
 
 [EuroSAT](https://github.com/phelber/EuroSAT) RGB: 27,000 Sentinel-2 patches, 64×64 px at 10 m/pixel,

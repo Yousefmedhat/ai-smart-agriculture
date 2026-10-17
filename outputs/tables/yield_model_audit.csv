@@ -1,0 +1,5 @@
+experiment,scored_on,R2,MAE,RMSE
+"A. Team setup (imputed + clipped target, random split)","clipped yield, all test rows",0.8909681187102507,0.31463916631850153,0.5776794689498439
+"B. Same model, real target","original yield, observed rows",1.183691663086961e-05,7.0414388612803895,520.2977065052374
+"C. Observed rows, log target, random split",log(1+yield),0.9344722111105135,0.13595656871438386,0.23306805579175
+"D. Observed rows, log target, train ≤2010 → test 2011–2014",log(1+yield),0.8672036676271916,0.18536193647801863,0.3415658847610274
